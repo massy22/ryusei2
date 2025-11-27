@@ -1,8 +1,11 @@
-/* 流星のロックマン1 モチーフ色（フォールバック RGB 指定で互換性確保） */
+/* 流星のロックマン2 モチーフ色（ベルセルク／シノビ／ダイナソー） */
 :root {
-  --accent-pegasus: #1f6feb; /* 青 */
-  --accent-leo:     #f5a623; /* 橙/黄 */
-  --accent-dragon:  #2ecc71; /* 緑 */
+  /* 06: ベルセルク（雷のアンバー） */
+  --accent-berserk:  #FFBE0B;
+  /* 05: シノビ（深い翡翠グリーン） */
+  --accent-shinobi:  #1FA34A;
+  /* 07: ダイナソー（炎の深紅） */
+  --accent-dinosaur: #E33131;
   --heading-bg-alpha: 0.10;  /* 見出しの薄い背景の不透明度 */
 }
 
@@ -24,38 +27,39 @@ article :is(h1,h2,h3,h4,h5,h6) {
 .article-heading,
 article h1 {
   font-size: 1.8rem;
-  border-left: 4px solid var(--accent-pegasus);
-  background-color: rgba(31,111,235,var(--heading-bg-alpha));
+  border-left: 4px solid var(--accent-berserk);
+  /* 背景はモチーフのLight寄り（黄系は視認性のため少しだけ濃く） */
+  background-color: rgba(255,226,138,calc(var(--heading-bg-alpha) * 1.2));
 }
 .article-heading,
 article h2 {
   font-size: 1.5rem;
-  border-left: 4px solid var(--accent-leo);
-  background-color: rgba(245,166,35,var(--heading-bg-alpha));
+  border-left: 4px solid var(--accent-shinobi);
+  background-color: rgba(139,234,114,var(--heading-bg-alpha));
 }
 .article-heading,
 article h3 {
   font-size: 1.25rem;
-  border-left: 4px solid var(--accent-dragon);
-  background-color: rgba(46,204,113,var(--heading-bg-alpha));
+  border-left: 4px solid var(--accent-dinosaur);
+  background-color: rgba(255,138,122,var(--heading-bg-alpha));
 }
 .article-heading,
 article h4 {
   font-size: 1.1rem;
-  border-left: 3px solid var(--accent-pegasus);
-  background-color: rgba(31,111,235,calc(var(--heading-bg-alpha) / 1.5));
+  border-left: 3px solid var(--accent-berserk);
+  background-color: rgba(255,226,138,calc(var(--heading-bg-alpha) / 1.5 * 1.2));
 }
 .article-heading,
 article h5 {
   font-size: 1.0rem;
-  border-left: 3px solid var(--accent-leo);
-  background-color: rgba(245,166,35,calc(var(--heading-bg-alpha) / 1.5));
+  border-left: 3px solid var(--accent-shinobi);
+  background-color: rgba(139,234,114,calc(var(--heading-bg-alpha) / 1.5));
 }
 .article-heading,
 article h6 {
   font-size: 0.95rem;
-  border-left: 2px solid var(--accent-dragon);
-  background-color: rgba(46,204,113,calc(var(--heading-bg-alpha) / 2));
+  border-left: 2px solid var(--accent-dinosaur);
+  background-color: rgba(255,138,122,calc(var(--heading-bg-alpha) / 2));
   font-weight: 600;
 }
 
