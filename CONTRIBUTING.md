@@ -22,7 +22,7 @@ Pull Request はいつでも歓迎しています。
 - 別の説明方法の提案や修正
 - 文章をわかりやすくするように改善
 
-:memo: **Note:** Pull Request を受け入れるとあなたの貢献が [Contributorsリスト](https://github.com/massy22/ryusei/graphs/contributors) に追加されます。<br />
+:memo: **Note:** Pull Request を受け入れるとあなたの貢献が [Contributorsリスト](https://github.com/massy22/ryusei2/graphs/contributors) に追加されます。<br />
 これは、あなたの貢献がこのウェブサイトへの努力的な寄付となることを意味しています。
 
 ## 修正の送り方
@@ -43,12 +43,12 @@ Pull Request はいつでも歓迎しています。
 ## 修正の確認方法
 
 このウェブサイトは [Hugo](https://gohugo.io/) で作成されています。<br />
-`hugo server` を実行後、[http://localhost:1313/ryusei/](http://localhost:1313/ryusei/) へアクセスすることで、ウェブサイトのプレビュー表示ができます。<br />
+`hugo server` を実行後、[http://localhost:1313/ryusei2/](http://localhost:1313/ryusei2/) へアクセスすることで、ウェブサイトのプレビュー表示ができます。<br />
 hugo のインストール方法については、[Installation](https://gohugo.io/installation/) を参照してください。
 
 ```
 hugo server
-# open http://localhost:1313/ryusei/
+# open http://localhost:1313/ryusei2/
 ```
 
 ## ディレクトリ構造
