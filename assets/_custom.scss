@@ -1,0 +1,93 @@
+/* 流星のロックマン1 モチーフ色（フォールバック RGB 指定で互換性確保） */
+:root {
+  --accent-pegasus: #1f6feb; /* 青 */
+  --accent-leo:     #f5a623; /* 橙/黄 */
+  --accent-dragon:  #2ecc71; /* 緑 */
+  --heading-bg-alpha: 0.10;  /* 見出しの薄い背景の不透明度 */
+}
+
+/* 見出し（コンテンツ領域に限定） - Wiki 風に読みやすく */
+.article-heading,
+article :is(h1,h2,h3,h4,h5,h6) {
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  line-height: 1.22;
+  scroll-margin-top: 4.5rem; /* fixed header を想定したアンカー補正 */
+  color: #0b1220; /* 見出しの基本色（本文より濃く） */
+  font-weight: 600;
+  background-clip: padding-box;
+}
+
+/* レベル別の左ボーダーと薄い背景で視認性向上（左アクセント + 穏やかな色背景） */
+.article-heading,
+article h1 {
+  font-size: 1.8rem;
+  border-left: 4px solid var(--accent-pegasus);
+  background-color: rgba(31,111,235,var(--heading-bg-alpha));
+}
+.article-heading,
+article h2 {
+  font-size: 1.5rem;
+  border-left: 4px solid var(--accent-leo);
+  background-color: rgba(245,166,35,var(--heading-bg-alpha));
+}
+.article-heading,
+article h3 {
+  font-size: 1.25rem;
+  border-left: 4px solid var(--accent-dragon);
+  background-color: rgba(46,204,113,var(--heading-bg-alpha));
+}
+.article-heading,
+article h4 {
+  font-size: 1.1rem;
+  border-left: 3px solid var(--accent-pegasus);
+  background-color: rgba(31,111,235,calc(var(--heading-bg-alpha) / 1.5));
+}
+.article-heading,
+article h5 {
+  font-size: 1.0rem;
+  border-left: 3px solid var(--accent-leo);
+  background-color: rgba(245,166,35,calc(var(--heading-bg-alpha) / 1.5));
+}
+.article-heading,
+article h6 {
+  font-size: 0.95rem;
+  border-left: 2px solid var(--accent-dragon);
+  background-color: rgba(46,204,113,calc(var(--heading-bg-alpha) / 2));
+  font-weight: 600;
+}
+
+/* 見出しのパーマリンク（アンカー）表示：普段は隠し、ホバーで表示。キーボード操作にも対応 */
+.article-heading .header-anchor,
+article :is(h1,h2,h3,h4,h5,h6) .header-anchor {
+  opacity: 0;
+  margin-left: 0.5rem;
+  transition: opacity .14s ease-in-out;
+  color: #334155; /* 目立ちすぎない落ち着いた色 */
+  text-decoration: none;
+  font-size: 0.85em;
+}
+
+/* ホバー／フォーカスでアンカーを表示 */
+article :is(h1,h2,h3,h4,h5,h6):hover .header-anchor,
+article :is(h1,h2,h3,h4,h5,h6) .header-anchor:focus {
+  opacity: 1;
+}
+
+/* 見出しのテキストが長い場合の折り返しと整列 */
+article :is(h1,h2,h3,h4,h5,h6) {
+  word-break: break-word;
+  hyphens: auto;
+}
+
+/* 小さい画面での調整 */
+@media (max-width: 640px) {
+  article h1 { font-size: 1.45rem; }
+  article h2 { font-size: 1.25rem; }
+  article h3 { font-size: 1.1rem; }
+  article :is(h4,h5,h6) {
+    font-size: 0.95rem;
+  }
+}
