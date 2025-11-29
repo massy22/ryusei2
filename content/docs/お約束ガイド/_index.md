@@ -21,7 +21,7 @@ weight: 10
 - PCなら
     - 左メニューから
 - モバイルなら
-    - 左上の <img src="icons/menu.svg"> をタップすると表示されるメニューから
+    - 左上の <img src="../../icons/menu.svg"> をタップすると表示されるメニューから
 <strong>検索</strong>を使いましょう。
 
 1. あなたが調べたい事柄に含まれる<span style="color:darkblue;"><strong>単語</strong></span>（ギガチップ、プリキュア等）を入力します。
