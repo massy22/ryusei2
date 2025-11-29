@@ -40,11 +40,11 @@ jobs:
         run: ls public/
 
       - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@2.0.0      # FTPを使ってサーバーにDeployするアクションを実行
+        uses: SamKirkland/FTP-Deploy-Action@2.0.0       # FTPを使ってサーバーにDeployするアクションを実行
         env:
-          FTP_SERVER: ${{ secrets.FTP_SERVER }}        # FTPサーバーのURLを設定
-          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}    # FTPのユーザー名を設定
-          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}    # FTPのパスワードを設定
-          LOCAL_DIR: public                            # どのディレクトリのデータをアップロードするか
-          REMOTE_DIR: /public_html/chipcom.org/ryusei  # FTPサーバのどのディレクトリにアップロードするか
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}         # FTPサーバーのURLを設定
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}     # FTPのユーザー名を設定
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}     # FTPのパスワードを設定
+          LOCAL_DIR: public                             # どのディレクトリのデータをアップロードするか
+          REMOTE_DIR: /public_html/chipcom.org/ryusei2  # FTPサーバのどのディレクトリにアップロードするか
           ARGS: --delete  --parallel=10
