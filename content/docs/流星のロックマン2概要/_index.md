@@ -1,12 +1,12 @@
 ---
 title: "流星のロックマン2概要"
-date: 2025-11-27T21:47:12+09:00
-lastmod: 2025-11-27T21:47:12+09:00
+date: 2025-11-29T20:57:29+09:00
+lastmod: 2025-11-29T20:57:29+09:00
 slug: "流星のロックマン2概要"
 draft: false
+weight: 20
 ---
 
-#freeze
 # 流星のロックマン2概要
 DS「流星のロックマン2」は、「ロックマン」20周年記念の第3弾タイトルとして発売されるシリーズ最新作。「サンダーベルセルク」、「グリーンシノビ」、「ファイアダイナソー」の3種類のロックマンが登場し、「ベルセルク×シノビ」と「ベルセルク×ダイナソー」の2通りの組み合わせで2タイトルが発売される。
 
@@ -32,10 +32,16 @@ DS「流星のロックマン2」は、「ロックマン」20周年記念の第
 
 　3種の遺産には、「シノビ」には木属性が、「ベルセルク」には電気属性が、「ダイナソー」には炎属性というように、それぞれに特徴の異なる属性が付加されている。 
 
-|~ソフト名|[流星のロックマン2 ベルセルク×シノビ:http://www.amazon.co.jp/exec/obidos/ASIN/B000VI3224/c0af-22/ref=nosim](docs/流星のロックマン2-ベルセルク-シノビ-http-//www-amazon-co-jp/exec/obidos/ASIN/B000VI3224/c0af-22/ref-nosim)<br />[流星のロックマン2 ベルセルク×ダイナソー:http://www.amazon.co.jp/exec/obidos/ASIN/B000VI1NP2/c0af-22/ref=nosim](docs/流星のロックマン2-ベルセルク-ダイナソー-http-//www-amazon-co-jp/exec/obidos/ASIN/B000VI1NP2/c0af-22/ref-nosim)|
-|---|---|
-|~メーカー|[カプコン:http://www.capcom.co.jp/](docs/カプコン-http-//www-capcom-co-jp/)|
-|~対応機種|[Nintendo DS:http://www.amazon.co.jp/exec/obidos/ASIN/B000EORYUG/c0af-22/ref=nosim](docs/Nintendo-DS-http-//www-amazon-co-jp/exec/obidos/ASIN/B000EORYUG/c0af-22/ref-nosim)|
-|~ジャンル|ブラザーアクションRPG|
-|~発売日|2007年11月22日|
-|~価格|5040円（税込）|
+- ソフト名
+  - [流星のロックマン2 ベルセルクxシノビ](https://www.amazon.co.jp/%E3%82%AB%E3%83%97%E3%82%B3%E3%83%B3-13306221-%E6%B5%81%E6%98%9F%E3%81%AE%E3%83%AD%E3%83%83%E3%82%AF%E3%83%9E%E3%83%B32-%E3%83%99%E3%83%AB%E3%82%BB%E3%83%AB%E3%82%AF%C3%97%E3%82%B7%E3%83%8E%E3%83%93-%E5%90%8C%E6%A2%B1%E7%89%B9%E5%85%B8%E7%84%A1%E3%81%97/dp/B000WQEPOY?&linkCode=ll1&tag=c0af-22&linkId=572e2388c53f2eb9aeed902aab7bbe62&language=ja_JP&ref_=as_li_ss_tl)
+  - [流星のロックマン2 ベルセルクxダイナソー](https://www.amazon.co.jp/%E3%82%AB%E3%83%97%E3%82%B3%E3%83%B3-13306221-%E6%B5%81%E6%98%9F%E3%81%AE%E3%83%AD%E3%83%83%E3%82%AF%E3%83%9E%E3%83%B32-%E3%83%99%E3%83%AB%E3%82%BB%E3%83%AB%E3%82%AF%C3%97%E3%83%80%E3%82%A4%E3%83%8A%E3%82%BD%E3%83%BC-%E5%90%8C%E6%A2%B1%E7%89%B9%E5%85%B8%E7%84%A1%E3%81%97/dp/B000WQM7Q2?&linkCode=ll1&tag=c0af-22&linkId=3bb7146c62f92d54bdba7ff5f1c4bf98&language=ja_JP&ref_=as_li_ss_tl)
+- メーカー
+  - [カプコン](https://www.capcom.co.jp/)
+- 対応機種
+  - [Nintendo DS](https://www.amazon.co.jp/exec/obidos/ASIN/B000EORYUG/c0af-22?th=1&linkCode=ll1&tag=c0af-22&linkId=2d64cc87579da49b776cf8fbf11ae9bc&language=ja_JP&ref_=as_li_ss_tl)
+- ジャンル
+  - ブラザーアクションRPG
+- 発売日
+  - 2007年11月22日
+- 価格
+  - 5040円（税込）

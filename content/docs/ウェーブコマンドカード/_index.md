@@ -4,6 +4,7 @@ date: 2025-11-27T21:47:12+09:00
 lastmod: 2025-11-27T21:47:12+09:00
 slug: "ウェーブコマンドカード"
 draft: false
+weight: 230
 ---
 
 # ウェーブコマンドカード
@@ -13,15 +14,12 @@ draft: false
 超星パック-禁断篇- 1パック3枚入り210円（税込）2008年2月21日発売<br />
 超星パック-革命篇- 1パック3枚入り210円（税込）2008年3月20日発売予定<br />
 
-  - こちらに発売済みカード一覧があります。→[タカラトミー・流星のロックマングッズサイト:http://www.takaratomy.co.jp/products/t-rockman/cardlist/index.html](docs/タカラトミー-流星のロックマングッズサイト-http-//www-takaratomy-co-jp/products/t-rockman/cardlist/index-html)
-
+こちらに発売済みカード一覧があります。→[タカラトミー・流星のロックマングッズサイト](http://www.takaratomy.co.jp/products/t-rockman/cardlist/index.html)（リンク切れ）
 
 アイテムカードは１セーブデータにつき各１回まで使用可能<br />
 トライブアタックカードは何度でも使用可能<br />
 バトルカードも何度でも入力可能だが、１種類１枚づつしか登録出来ない。<br />
 （例えば、スタンダードクラスのパルスノイズを３枚登録して連続して使う、と言った事は不可能）
-
-#contents
 
 ## ブランクカード入手法
 |番号|場所|詳細|
