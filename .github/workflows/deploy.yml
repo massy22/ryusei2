@@ -36,6 +36,9 @@ jobs:
       - name: Build
         run: hugo --minify
 
+      - name: Copy .htaccess to public directory
+        run: cp .htaccess public/ # .htaccess はリポジトリのルートにある
+
       - name: List output files
         run: ls public/
 
