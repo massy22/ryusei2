@@ -1,0 +1,73 @@
+# mod_rewrite エンジンを有効化
+RewriteEngine On
+
+# サーバー上のベースディレクトリを指定
+RewriteBase /ryusei2/
+
+# ----------------------------------------------------
+# 0. 特定のクエリ文字列を恒久削除 (410 GONE) にする
+# ----------------------------------------------------
+RewriteCond %{QUERY_STRING} ^2ch%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC\.html$
+RewriteRule ^$ - [G,L]
+
+
+# ----------------------------------------------------
+# 1. 特殊文字の置換が必要なケース（FAQの〜を - に置換）- ワイルドカードでエンコード差異を吸収
+# ----------------------------------------------------
+# R=301 (恒久的) に戻し、QSD (クエリ文字列破棄) を追加
+RewriteCond %{QUERY_STRING} ^FAQ.*%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%B3%AA%E5%95%8F\.html$
+RewriteRule ^$ /ryusei2/docs/FAQ-よくある質問/ [R=301,L,QSD] 
+
+
+# ----------------------------------------------------
+# 2. 特殊文字の置換が必要なケース（ストーリー攻略の〜 と ・ を - に置換）
+# ----------------------------------------------------
+# **第1話〜ファントム・ブラック戦.html**
+RewriteCond %{QUERY_STRING} ^(%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC%E6%94%BB%E7%95%A5/%E7%AC%AC1%E8%A9%B1)%EF%BD%9E(.+?)%E3%83%BB(.+?)\.html$
+RewriteRule ^$ docs/%1-%2-%3/ [R=301,NE,QSD,L]
+
+# **第2話〜イエティ・ブリザード戦.html**
+RewriteCond %{QUERY_STRING} ^(%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC%E6%94%BB%E7%95%A5/%E7%AC%AC2%E8%A9%B1)%EF%BD%9E(.+?)%E3%83%BB(.+?)\.html$
+RewriteRule ^$ docs/%1-%2-%3/ [R=301,NE,QSD,L]
+
+# **第3話〜オヒュカス・クイーン戦.html**
+RewriteCond %{QUERY_STRING} ^(%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC%E6%94%BB%E7%95%A5/%E7%AC%AC3%E8%A9%B1)%EF%BD%9E(.+?)%E3%83%BB(.+?)\.html$
+RewriteRule ^$ docs/%1-%2-%3/ [R=301,NE,QSD,L]
+
+# **第4話〜ブラキオ・ウェーブ戦.html**
+RewriteCond %{QUERY_STRING} ^(%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC%E6%94%BB%E7%95%A5/%E7%AC%AC4%E8%A9%B1)%EF%BD%9E(.+?)%E3%83%BB(.+?)\.html$
+RewriteRule ^$ docs/%1-%2-%3/ [R=301,NE,QSD,L]
+
+# **第5話〜コンドル・ジオグラフ戦.html**
+RewriteCond %{QUERY_STRING} ^(%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC%E6%94%BB%E7%95%A5/%E7%AC%AC5%E8%A9%B1)%EF%BD%9E(.+?)%E3%83%BB(.+?)\.html$
+RewriteRule ^$ docs/%1-%2-%3/ [R=301,NE,QSD,L]
+
+# **第7話〜ラ・ムー戦.html**
+RewriteCond %{QUERY_STRING} ^(%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC%E6%94%BB%E7%95%A5/%E7%AC%AC7%E8%A9%B1)%EF%BD%9E(.+?)%E3%83%BB(.+?)\.html$
+RewriteRule ^$ docs/%1-%2-%3/ [R=301,NE,QSD,L]
+
+# **第8話〜アポロン・フレイム戦.html**
+RewriteCond %{QUERY_STRING} ^(%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC%E6%94%BB%E7%95%A5/%E7%AC%AC8%E8%A9%B1)%EF%BD%9E(.+?)%E3%83%BB(.+?)\.html$
+RewriteRule ^$ docs/%1-%2-%3/ [R=301,NE,QSD,L]
+
+
+# ----------------------------------------------------
+# 3. 特殊文字の置換が必要なケース（〜 のみ）
+# ----------------------------------------------------
+
+# **第6話〜ブライ戦.html** (〜のみ、中黒なし)
+RewriteCond %{QUERY_STRING} ^(%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC%E6%94%BB%E7%95%A5/%E7%AC%AC6%E8%A9%B1)%EF%BD%9E(.+?)\.html$
+RewriteRule ^$ docs/%1-%2/ [R=301,NE,QSD,L]
+
+
+# ----------------------------------------------------
+# 4. 通常のURL（.htmlで終わり、上記置換ルールにマッチしないもの）を /docs/ にリダイレクト
+# ----------------------------------------------------
+RewriteCond %{QUERY_STRING} ^(.+?)\.html$
+RewriteRule ^$ docs/%1/ [R=301,NE,QSD,L]
+
+# ----------------------------------------------------
+# 5. クエリ文字列なしのURL (/ryusei2/) をリダイレクト
+# ----------------------------------------------------
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^$ index.html [R=301,L]
